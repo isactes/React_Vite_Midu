@@ -2,8 +2,6 @@ import "./App.css"
 
 function TwitterFollowCard({ userName, name, isFollowimg }) {
 
-    console.log("isfollowing", isFollowimg)
-
     //const srcImg = `https://unavatar.io/telegram/${userName}`
     return (
         <article className="tw-followCard">
