@@ -2,30 +2,30 @@ import TwitterFollowCard  from "./TwitterFollowCard"
 
 function App() {
 
-    const format = (userName) => `@${userName}`
-
+    //const format = (userName) => `@${userName}`
+    const formattedUserName = <span>@isactes</span>
     return(
         <div className="App">
 
         <TwitterFollowCard 
-        formatUserName={format}
+        formattedUserName={formattedUserName}
         isFollowimg 
         userName="isactes"
         name="isac" />
 
         <TwitterFollowCard 
-        formatUserName={format} 
+        formattedUserName={formattedUserName} 
         isFollowimg={false} 
         userName="adasd" 
         name="isac" />
 
         <TwitterFollowCard 
-        formatUserName={format} 
+        formattedUserName={formattedUserName} 
         isFollowimg 
         userName="salazar" 
         name="isac" />
         <TwitterFollowCard 
-        formatUserName={format} 
+        formattedUserName={formattedUserName} 
         isFollowimg={false} 
         userName="noelly" 
         name="isac" />
