@@ -4,33 +4,30 @@ function App() {
 
     //const format = (userName) => `@${userName}`
     //const formattedUserName = <span>@isactes</span>
+
+    const isactes = { isFollowimg: false, userName: "isactes" };
+    const fidel = { isFollowimg: false, userName: "fidel" };
+    const wallas = { isFollowimg: false, userName: "wallas" };
+    const aurora = { isFollowimg: false, userName: "aurora" };
+
+
     return(
         <div className="App">
 
-        <TwitterFollowCard 
-        isFollowimg 
-        userName="isactes" >
+        <TwitterFollowCard {...isactes}>
             Isac 
         </TwitterFollowCard>
 
-        <TwitterFollowCard  
-        isFollowimg={false} 
-        userName="adasd" >
+        <TwitterFollowCard {...fidel}>
             Fidel 
         </TwitterFollowCard>
 
-        <TwitterFollowCard  
-        isFollowimg 
-        userName="salazar" 
-        name="isac" >
+        <TwitterFollowCard {...wallas}>
             wallas 
         </TwitterFollowCard>
 
 
-        <TwitterFollowCard  
-        isFollowimg={false} 
-        userName="noelly" 
-        name="isac" >
+        <TwitterFollowCard {...aurora}>
             Aurora 
         </TwitterFollowCard>
 
