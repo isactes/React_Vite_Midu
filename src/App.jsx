@@ -9,22 +9,32 @@ function App() {
 
         <TwitterFollowCard 
         isFollowimg 
-        userName="isactes"
-        name="isac" />
+        userName="isactes" >
+            Isac 
+        </TwitterFollowCard>
 
         <TwitterFollowCard  
         isFollowimg={false} 
-        userName="adasd" 
-        name="isac" />
+        userName="adasd" >
+            Fidel 
+        </TwitterFollowCard>
 
         <TwitterFollowCard  
         isFollowimg 
         userName="salazar" 
-        name="isac" />
+        name="isac" >
+            wallas 
+        </TwitterFollowCard>
+
+
         <TwitterFollowCard  
         isFollowimg={false} 
         userName="noelly" 
-        name="isac" />
+        name="isac" >
+            Aurora 
+        </TwitterFollowCard>
+
+
         </div>
     )
 }
