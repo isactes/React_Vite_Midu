@@ -1,3 +1,4 @@
+import { useState } from "react";
 import TwitterFollowCard  from "./TwitterFollowCard"
 
 function App() {
@@ -9,12 +10,12 @@ function App() {
 //    const fidel = { isFollowimg: false, userName: "fidel" };
 //    const wallas = { isFollowimg: false, userName: "wallas" };
 //    const aurora = { isFollowimg: false, userName: "aurora" };
-
+    const [isname, setIsNama] = useState("isactes");
 
     return(
         <div className="App">
 
-        <TwitterFollowCard  userName="isactes">
+        <TwitterFollowCard  userName={isname}>
             Isac 
         </TwitterFollowCard>
 
@@ -31,6 +32,9 @@ function App() {
             Aurora 
         </TwitterFollowCard>
 
+        <button onClick={() => setIsNama("fidelruedas")}>
+            Change Name
+        </button>
 
         </div>
     )
