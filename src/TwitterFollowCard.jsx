@@ -3,16 +3,24 @@ import { useState } from "react"
 import "./App.css"
 
 
-function TwitterFollowCard({ children, userName, isFollowimg }) {
+function TwitterFollowCard({ children, userName }) {
 
     //const srcImg = `https://unavatar.io/telegram/${userName}`
     //const addAt = (userName) => `@${userName}`
     //Componentes crean elementos y los elemntos son los que renderiza React
     //Componente funcion que devuelve un elemento y React redenriza el elemento
-    const text = isFollowimg ? "Siguiendo" : "Seguir"
-    const buttonClassName = isFollowimg ? "tw-followCard-button is-folowing" : "tw-followCard-button"
+    const [isFollowing, setIsFollowing] = useState(false);
 
-    
+    const text = isFollowing 
+    ? "Siguiendo" 
+    : "Seguir"
+    const buttonClassName = isFollowing 
+    ? "tw-followCard-button is-folowing" 
+    : "tw-followCard-button"
+
+    const handleClick = () => {
+        setIsFollowing(!isFollowing)
+    }
 
 
     return (
@@ -29,7 +37,7 @@ function TwitterFollowCard({ children, userName, isFollowimg }) {
                 </div>
             </header>
             <aside className="tw-followCard-aside">
-                <button className={buttonClassName}>
+                <button className={buttonClassName} onClick={handleClick}>
                     {text}
                 </button>
             </aside>

@@ -14,20 +14,20 @@ function App() {
     return(
         <div className="App">
 
-        <TwitterFollowCard isFollowimg={false} userName="isactes">
+        <TwitterFollowCard  userName="isactes">
             Isac 
         </TwitterFollowCard>
 
-        <TwitterFollowCard isFollowimg userName="fidel">
+        <TwitterFollowCard  userName="fidel">
             Fidel 
         </TwitterFollowCard>
 
-        <TwitterFollowCard isFollowimg={false} userName="wallas">
+        <TwitterFollowCard  userName="wallas">
             wallas 
         </TwitterFollowCard>
 
 
-        <TwitterFollowCard isFollowimg userName="Auroramusic">
+        <TwitterFollowCard  userName="Auroramusic">
             Aurora 
         </TwitterFollowCard>
 
