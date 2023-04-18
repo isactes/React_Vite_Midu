@@ -38,7 +38,8 @@ function TwitterFollowCard({ children, userName, initialIsItFollowing }) {
             </header>
             <aside className="tw-followCard-aside">
                 <button className={buttonClassName} onClick={handleClick}>
-                    {text}
+                    <span className="tw-card-text">{text}</span>
+                    <span className="tw-card-unfollow">Unfollow</span>
                 </button>
             </aside>
         </article>

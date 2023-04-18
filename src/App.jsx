@@ -10,33 +10,20 @@ function App() {
 //const wallas = { isFollowimg: false, userName: "wallas" };
 //const aurora = { isFollowimg: false, userName: "aurora" };
 //const [isname, setIsNama] = useState("isactes");
-  const [isFolloeing, setIsFollowing] = useState(false)
+//const [isFolloeing, setIsFollowing] = useState(false)
   //error nunca inicializa un stado para que se puede cambiar desde el padre, si el hijo esta con un estado inical se quea fijo ya que no podemos cambiar el estado al padre si el hijo esta inicializado el estado
 
     return(
         <div className="App">
         {/*poner comentarios */}
 
-        <TwitterFollowCard  userName="isactes" initialIsItFollowing={isFolloeing}>
+        <TwitterFollowCard  userName="isactes">
             Isac 
         </TwitterFollowCard>
 
-        <TwitterFollowCard  userName="fidel">
+        <TwitterFollowCard initialIsItFollowing  userName="fidel">
             Fidel 
         </TwitterFollowCard>
-
-        <TwitterFollowCard  userName="wallas">
-            wallas 
-        </TwitterFollowCard>
-
-
-        <TwitterFollowCard  userName="Auroramusic">
-            Aurora 
-        </TwitterFollowCard>
-
-        <button onClick={() => setIsFollowing(!isFolloeing)}>
-            Cambiar estado de app
-        </button>
 
         </div>
     )
