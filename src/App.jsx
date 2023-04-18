@@ -51,12 +51,13 @@ function App() {
         {/*poner comentarios */}
         {/*una manera de maperar y renderizar */}
         {
-            users.map(user => {
-                const { userName, name, isFollowing } = user
+            users.map(({ userName, name, isFollowing }) => {
+                
                 return(
                     <TwitterFollowCard
                     userName={userName}
                     initialIsItFollowing={isFollowing}
+                    key={userName}
                     >
                         {name}
                     </TwitterFollowCard>
