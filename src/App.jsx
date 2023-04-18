@@ -10,12 +10,13 @@ function App() {
 //    const fidel = { isFollowimg: false, userName: "fidel" };
 //    const wallas = { isFollowimg: false, userName: "wallas" };
 //    const aurora = { isFollowimg: false, userName: "aurora" };
-    const [isname, setIsNama] = useState("isactes");
+//   const [isname, setIsNama] = useState("isactes");
 
     return(
         <div className="App">
+        {/*poner comentarios */}
 
-        <TwitterFollowCard  userName={isname}>
+        <TwitterFollowCard  userName="isactes" initialIsItFollowing={true}>
             Isac 
         </TwitterFollowCard>
 
@@ -31,10 +32,6 @@ function App() {
         <TwitterFollowCard  userName="Auroramusic">
             Aurora 
         </TwitterFollowCard>
-
-        <button onClick={() => setIsNama("fidelruedas")}>
-            Change Name
-        </button>
 
         </div>
     )

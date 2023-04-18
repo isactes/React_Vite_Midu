@@ -3,13 +3,13 @@ import { useState } from "react"
 import "./App.css"
 
 
-function TwitterFollowCard({ children, userName }) {
+function TwitterFollowCard({ children, userName, initialIsItFollowing }) {
 
     //const srcImg = `https://unavatar.io/telegram/${userName}`
     //const addAt = (userName) => `@${userName}`
     //Componentes crean elementos y los elemntos son los que renderiza React
     //Componente funcion que devuelve un elemento y React redenriza el elemento
-    const [isFollowing, setIsFollowing] = useState(false);
+    const [isFollowing, setIsFollowing] = useState(initialIsItFollowing);
 
     const text = isFollowing 
     ? "Siguiendo" 
